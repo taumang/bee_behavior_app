@@ -15,12 +15,11 @@ const behaviors = [
   { id: 9, name: 'Reproduction', description: 'Mating and ensuring the survival of the colony.' }
 ];
 
-
 //activating cors (to link with the frontend)
+// Define the endpoints
 app.use(cors())
 
 
-// Define the endpoints
 app.get('/behaviors', (req, res) => {
     res.json(behaviors);
   });
@@ -37,7 +36,7 @@ app.get('/behaviors', (req, res) => {
   });
 
 
-// port of the server
-app.listen(3500,()=>{
+  app.listen(3500,()=>{
     console.log('Server is live on port 3500');
-})
+  })
+  // port of the server
