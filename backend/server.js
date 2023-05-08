@@ -9,7 +9,7 @@ const behaviors = [
   { id: 3, name: 'Nest Building', description: 'Building nests to lay eggs and raise young.' }
 ];
 
-//activating cors
+//activating cors (to link with the frontend)
 app.use(cors())
 
 
