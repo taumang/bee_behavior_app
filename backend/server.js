@@ -1,6 +1,9 @@
 const express = require('express')
 const cors = require('cors')
+const helmet = require('helmet')
+
 const app = express()
+
 
 // Define the data model
 const behaviors = [
@@ -17,7 +20,7 @@ const behaviors = [
 
 // Define the endpoints
 app.use(cors())
-
+app.use(helmet.contentSecurityPolicy())
 
 //activating cors (to link with the frontend)
 app.get('/behaviors', (req, res) => {
