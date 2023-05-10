@@ -15,11 +15,11 @@ const behaviors = [
   { id: 9, name: 'Reproduction', description: 'Mating and ensuring the survival of the colony.' }
 ];
 
-//activating cors (to link with the frontend)
 // Define the endpoints
 app.use(cors())
 
 
+//activating cors (to link with the frontend)
 app.get('/behaviors', (req, res) => {
     res.json(behaviors);
   });
